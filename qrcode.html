@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <title>Document</title>
+</head>
+<body>
+        <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo center">QR_CODE </a>
+                  <ul id="nav-mobile" class="left hide-on-med-and-down">
+                
+                  </ul>
+                </div>
+              </nav>
+                    
+      <div class="jumbotron">
+          <h1 class="display-3 center">QR Code Generator</h1>
+          <p class="lead center">by Muhammad Hajid Al Akhtar</p>
+          <p class="lead center">
+                
+                        <input type="text" placeholder="Masukan Link" id="url" class="validate center" style="width:30%" ><br>
+               
+              <a class="btn btn-success center" role="button" id="btn">Generate</a>
+          
+              <div id="hasil" style="margin:auto; width: 45%">
+                    
+                </div>
+            </p>
+      </div>
+</body>
+</html>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+ 
+
+<script>
+    $().ready(function(){
+        $( "#btn" ).click(function() {
+           var url =$('#url').val();
+           $('#hasil').html('<img src="https://qr.johneletto.com/'+url+'" class="materialboxed" width="650"   />')
+            
+});
+
+
+
+ 
+   
+    })
+
+
+
+
+</script>
